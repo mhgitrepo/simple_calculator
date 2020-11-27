@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Javascript Calculator!</h1>
+        <div class="calculator">
+            <form action="">
+                <input type="text" placeholder="0" class="form-control" id="display">
+            </form>
+            <div class="btn-row mt-3">
+                <input type="button" value="AC" class="btn btn-secondary" id="btn-ac" onclick="document.getElementById('display').value = null">
+                <input type="button" value="DEL" class="btn btn-secondary" onclick="document.getElementById('display').value = document.getElementById('display').value.slice(0, -1)">
+                <input type="button" value="%" class="btn btn-secondary" onclick="count(this.value)">
+                <input type="button" value="/" class="btn btn-secondary" onclick="count(this.value)">
+            </div>
+
+            <div class="btn-row mt-3">
+                <input type="button" value="7" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="8" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="9" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="*" class="btn btn-secondary" onclick="count(this.value)">
+            </div>
+
+            <div class="btn-row mt-3">
+                <input type="button" value="4" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="5" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="6" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="-" class="btn btn-secondary" onclick="count(this.value)">
+            </div>
+
+            <div class="btn-row mt-3">
+                <input type="button" value="1" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="2" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="3" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="+" class="btn btn-secondary" onclick="count(this.value)">
+            </div>
+
+            <div class="btn-row mt-3">
+                <input type="button" value="." class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="0" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="00" class="btn btn-info" onclick="count(this.value)">
+                <input type="button" value="=" class="btn btn-secondary" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">
+            </div>
+        </div>
+    </div>
+
+    <!-- Js file -->
+    <script src="calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.calculator{
+    width: 377px;
+    margin: 50px auto;
+    padding: 12px;
+    border: 1.4px solid #4b718566;
+    border-radius: 5px;
+}
+#display{
+    height: 70px;
+    font-size: 25px;
+    text-align: right;
+    font-weight: 500;
+    border: 2px solid #607d8b66;
+    background-color: honeydew;
+}
+.btn{
+    width: 84px;
+    height: 60px;
+    font-size: 25px;
+}
