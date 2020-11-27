@@ -15,7 +15,7 @@
                 <input type="text" placeholder="0" class="form-control" id="display">
             </form>
             <div class="btn-row mt-3">
-                <input type="button" value="AC" class="btn btn-secondary" id="btn-ac" onclick="document.getElementById('display').value = null">
+                <input type="button" value="AC" class="btn btn-secondary" id="btn-ac" onclick="document.getElementById('display').value = '' ">
                 <input type="button" value="DEL" class="btn btn-secondary" onclick="document.getElementById('display').value = document.getElementById('display').value.slice(0, -1)">
                 <input type="button" value="%" class="btn btn-secondary" onclick="count(this.value)">
                 <input type="button" value="/" class="btn btn-secondary" onclick="count(this.value)">
